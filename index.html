@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WeSnus - Application de suivi de consommation de sachets de nicotine et réseau social. Réservé aux adultes (18+).">
+  <title>WeSnus - Tracker & Communauté (18+)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+      color: #01C0D6; /* Nouvelle couleur Cyan */
+      line-height: 1.6;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      border-bottom: 1px solid #1a1a1a;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #01C0D6;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #01C0D6;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s, text-shadow 0.3s;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #01C0D6;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: radial-gradient(circle at center, #111 0%, #0a0a0a 100%);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .hero span {
+      color: #01C0D6;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.15rem;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+    .warning-badge {
+      display: inline-block;
+      background: rgba(255, 50, 50, 0.15);
+      color: #ff4d4d;
+      border: 1px solid #ff4d4d;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Features Grid */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: #161616;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s, border-color 0.3s;
+      border: 1px solid #222;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #01C0D6;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #01C0D6;
+      font-size: 1.3rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 15px;
+      background: #111;
+      border-top: 1px solid #1a1a1a;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    footer a {
+      color: #01C0D6;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .legal-notice {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      nav a {
+        margin: 0 5px;
+        font-size: 0.85rem;
+      }
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WeSnus</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">Conditions (EULA)</a>
+      <a href="refund-policy.html">Remboursement</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="warning-badge">🔞 Réservé aux adultes (18+)</div>
+    <h2>Le tracker social <br><span>intelligent</span> & communautaire</h2>
+    <p>Suivez votre consommation, gérez votre budget et rejoignez une communauté d'utilisateurs avertis. WeSnus vous offre des statistiques précises et un espace d'échange sécurisé.</p>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>📊 Suivi & Statistiques</h3>
+      <p>Enregistrez chaque consommation en un clic. Visualisez votre historique, analysez vos taux de nicotine et gardez le contrôle sur vos habitudes quotidiennes grâce à des graphiques clairs.</p>
+    </div>
+    <div class="card">
+      <h3>💬 Social & Avis</h3>
+      <p>Partagez vos découvertes. Notez les produits, donnez votre avis sur les saveurs et suivez les recommandations de la communauté pour éviter les mauvais achats.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Privé & Sécurisé</h3>
+      <p>Vos données sont précieuses. Nous ne vendons pas vos informations personnelles. Profitez d'une expérience sans publicité intrusive et respectueuse de votre vie privée.</p>
+    </div>
+    <div class="card">
+      <h3>⭐ Premium Avancé</h3>
+      <p>Passez au niveau supérieur avec WeSnus Premium : historique illimité, badge vérifié, gestion de budget avancée et support prioritaire.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 WeSnus. Tous droits réservés.</p>
+    <p>
+      <a href="privacy.html">Confidentialité</a> |
+      <a href="terms.html">CGU & EULA</a> |
+      <a href="refund-policy.html">Remboursement</a>
+    </p>
+    <p>Contact : contactwesnus@gmail.com</p>
+    
+    <div class="legal-notice">
+      <p>Avertissement : Les produits référencés dans cette application contiennent de la nicotine, une substance addictive. L'application est strictement interdite aux mineurs. WeSnus ne vend aucun produit et n'encourage pas la consommation.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
